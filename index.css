@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+     text-align: center; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    background-image: url("/images/DelhiMetroYellowLine.jpeg");
+    background-size: cover;
+    opacity: 0.75; 
+
+}
+.container{
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+}
+h1{
+    padding: 20px; 
+    font-size: 4rem;
+    color: black;
+    position: relative; 
+    /* As soon as .navigation-bar and .header-content are relatively positioned, they will stack higher than .section-1::before (because they appear after .section-1::before in the HTML,agar aisa na krte to h1 and h2 neeche hi stack krte). */
+}
+h2{
+    color: black;
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+button{
+    /* here i dont know how the button gets automatically placed just beneath the h2 and not from the left of the next line */ 
+margin-bottom: 1rem;    
+    color: white;
+    padding: 1rem ;
+    font-size: 1.5rem;
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+    cursor: pointer;
+    border: 2px solid black;
+    
+}
+
+#increment-btn{
+    background-color: maroon;
+}
+#save-btn{
+    margin: 1rem auto;
+    display: block;
+    background-color: black; 
+}
+.button-clicked {
+    background-color:darkgreen !important;
+    transform: scale(2);
+
+}
+#new-entries{
+    color: black;
+    font-size: 2rem;
+    position: relative;
+    font-weight: bold;
+}
+.engrave{
+    opacity: 0.9;
+}
